@@ -113,24 +113,12 @@ function Library:Create(TitleText)
 	UILibrary.Name = LibName
 	UILibrary.Parent = game:GetService("CoreGui")
 
-Main.Name = "Main"
-Main.Parent = UILibrary
-Main.AnchorPoint = Vector2.new(0.5, 0.5)
-Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Main.BackgroundTransparency = 0.3
-Main.Position = UDim2.new(0.5, 0, 0.5, 0)
-Main.Size = UDim2.new(0, 400, 0, 228)
-
--- Anime Girl Background
-local Background = Instance.new("ImageLabel")
-Background.Name = "Background"
-Background.Parent = Main
-Background.BackgroundTransparency = 1
-Background.Position = UDim2.new(0,0,0,0)
-Background.Size = UDim2.new(1,0,1,0)
-Background.Image = "rbxassetid://654225838"
-Background.ScaleType = Enum.ScaleType.Crop
-Background.ZIndex = -1
+	Main.Name = "Main"
+	Main.Parent = UILibrary
+	Main.AnchorPoint = Vector2.new(0.5, 0.5)
+	Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Main.Size = UDim2.new(0, 400, 0, 228)
 
 	UICorner.CornerRadius = UDim.new(0, 6)
 	UICorner.Parent = Main
